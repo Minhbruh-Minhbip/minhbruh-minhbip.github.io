@@ -1,86 +1,316 @@
-a{
-  display: flex;
-  justify-content: center;
-    color: aqua;
-    text-decoration: none;
+/* --- BIẾN MÀU SẮC DÙNG CHUNG --- */
+:root {
+  --bg-color: #161618;
+  --bg-card: #222225;
+  --primary-color: crimson;
+  --text-main: #f5f5f5;
+  --text-muted: #aeb4c0;
+  --accent-color: #5c6bc0;
 }
-a:hover {
-  color: crimson;
-  text-decoration: none;
-  display: flex;
-  justify-content: center;
+
+/* --- RESET & GLOBAL --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-    background-color: dimgrey;
+
+body {
+  font-family: 'Poppins', sans-serif; /* Font hiện đại */
+  background-color: var(--bg-color);
+  color: var(--text-main);
+  line-height: 1.6;
 }
-.card-container {
-  display: flex; /* Bật chế độ Flexbox */
-  flex-wrap: wrap; /* Cho phép các phần tử con tự xuống dòng nếu không đủ chỗ */
-  justify-content: space-evenly; /* Căn đều khoảng cách giữa các phần tử con */
-  gap: 0px; /* Khoảng cách giữa các phần tử con là 0 */
-  padding-bottom: 0px; /* Khoảng cách dưới container là 50px */
-  padding-top: 0px; /* Khoảng cách trên container là 20px */
-  padding-left: 0px; /* Khoảng cách bên trái container là 150px */
-  padding-right: 0px; /* Khoảng cách bên phải container là 150px */
-}
-.block {
-    display: inline-block;
-    width: 500px; /* Chiều rộng */
-    height: 700px; /* Chiều cao */
-    background-color: #815151; /* Màu nền */
-    border-radius: 20px;
-    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.5);
-    overflow: hidden; /* Ẩn phần hình ảnh bị thừa */
-    img {
-      margin-top: 70px;
-      margin-left: 65px;
-    }
-  }
-.topblock {
-    display: inline-block;
-    width: 75px; /* Chiều rộng */
-    height: 25px; /* Chiều cao */
-    background-color: #5a5a5a; /* Màu nền */
-    border-radius: 20px;
-    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.5);
-  }
-.picktopblock {
-    display: inline-block;
-    width: 100px; /* Chiều rộng */
-    height: 30px; /* Chiều cao */
-    background-color: #f1dfdf; /* Màu nền */
-    border-radius: 20px;
-    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.5);
-  }
-.link_text {
-    display: flex;
-    justify-content: center;
-    line-height: 200px;
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-    text-align: center;
-    font-size: 30px;
-    font-weight: bold;
-    align-items: flex-end; 
-}
-.tabblock {
-    background-color: black; /* Nền đen */
-    padding: 20px;          /* Khoảng cách bên trong */
-}
-.downblock {
-  display: inline-block;
-  width: 125px; /* Chiều rộng */
-  height: 25px; /* Chiều cao */
-  background-color: #5a5a5a; /* Màu nền */
-  justify-content: center;
-  border-radius: 20px;
-  box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.5);
-}
+
 img {
   max-width: 100%;
   height: auto;
+  display: block;
 }
-body {
-  margin: 0;
-  padding: 0;
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px; /* Khoảng cách giữa các khu vực */
+}
+
+/* --- NAVBAR TỐI ƯU LẠI --- */
+.navbar {
+  background-color: #0d0d0e;
+  padding: 15px 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.nav-item {
+  color: var(--text-muted);
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 8px 25px;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+.nav-item:hover {
+  background-color: rgba(220, 20, 60, 0.2);
+  color: var(--primary-color);
+}
+
+.nav-item.active {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+/* --- HERO SECTION (GIỚI THIỆU) --- */
+.hero-section {
+  text-align: center;
+  background-color: var(--bg-card);
+  padding: 50px 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%; /* Tròn avatar */
+  border: 4px solid var(--primary-color);
+  margin: 0 auto 20px auto;
+  object-fit: cover;
+  box-shadow: 0 0 20px rgba(220, 20, 60, 0.4);
+}
+
+.hero-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.highlight {
+  color: var(--primary-color);
+}
+
+.subtitle {
+  color: var(--accent-color);
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.description {
+  color: var(--text-muted);
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* --- GITHUB SECTION --- */
+.github-section {
+  text-align: center;
+}
+
+.section-title {
+  font-size: 1.8rem;
+  margin-bottom: 25px;
+  color: var(--text-main);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.github-widget {
+  background: var(--bg-card);
+  padding: 20px;
+  border-radius: 15px;
+  display: inline-block;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.github-widget img {
+  filter: hue-rotate(340deg); /* Chỉnh màu biểu đồ chart cho hợp với tone Crimson */
+}
+
+/* --- COMMUNITY SECTION (DISCORD + GIF) --- */
+.community-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap; /* Tự xuống dòng trên mobile */
+}
+
+.discord-widget iframe {
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.team-gif img {
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  max-width: 350px; /* Giới hạn độ to của GIF */
+}
+
+
+/* --- CÁC CLASS CŨ CỦA BẠN (DÀNH CHO TRANG MODS) --- */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.block {
+  width: 500px;
+  background-color: var(--bg-card);
+  border-radius: 20px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  text-align: center;
+  padding-bottom: 20px;
+  border: 1px solid #333;
+}
+
+.block img {
+  margin: 20px auto;
+  border-radius: 10px;
+}
+
+/* --- CHẶN VUỐT TRANG (SWIPE TO GO BACK) --- */
+html, body {
+  overscroll-behavior: none; /* Chặn kéo thả/vuốt để back/forward */
+}
+
+/* --- TRANG DANH SÁCH MODS (3 BLOCK 1 HÀNG) --- */
+.mods-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.mods-header h1 {
+  font-size: 3rem;
+  color: var(--text-main);
+}
+.mods-header p {
+  color: var(--accent-color);
+  font-size: 1.2rem;
+}
+.mods-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Ép buộc 3 cột đều nhau */
+  gap: 30px;
+  width: 100%;
+}
+.mod-card {
+  background-color: var(--bg-card);
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #333;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.mod-card:hover {
+  transform: translateY(-10px);
+  border-color: var(--primary-color);
+}
+.mod-card img {
+  border-radius: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+}
+.mod-title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: var(--primary-color) !important;
+  margin-bottom: 15px;
+  display: block;
+}
+.mod-desc {
+  color: var(--text-muted);
+  font-size: 1rem;
+}
+
+/* --- TRANG CHƠI GAME (CHI TIẾT MOD) --- */
+.game-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.game-header h1 {
+  font-size: 2.5rem;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+/* Màu riêng cho từng game */
+.color-elemental { color: crimson; }
+.color-endless { color: rgb(110, 133, 235); }
+.color-skin { color: rgb(20, 220, 70); }
+
+.media-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+.media-section iframe {
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  max-width: 100%;
+}
+.btn-download {
+  background-color: var(--primary-color);
+  color: white !important;
+  padding: 12px 35px;
+  border-radius: 30px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  box-shadow: 0 5px 15px rgba(220, 20, 60, 0.4);
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+.btn-download:hover {
+  background-color: #ff3355;
+  transform: scale(1.05);
+}
+
+/* Khu vực chơi game */
+.game-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #000;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* --- FOOTER GIF LUÔN Ở CUỐI VÀ CĂN GIỮA --- */
+.footer-gif {
+  display: flex;
+  justify-content: center;
+  margin-top: auto; /* Đẩy xuống cuối */
+  padding: 40px 0;
+  width: 100%;
+}
+.footer-gif img {
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.5);
 }
