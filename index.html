@@ -1,32 +1,48 @@
 <!DOCTYPE html>
-<html>
-<!--   phần đầu -->
+<html lang="vi">
   <head>
-    <title>Home</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minhbip Modding | Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/main.css">
     <link rel="shortcut icon" href="/img/dbc96f3e64d8009c0e45ed74801bc491.ico" type="image/x-icon" />
-    <style>
-      h1{
-          color:rgb(255, 243, 243);
-      }
-  </style>
   </head>
-<!--   phần thân  -->
   <body>
-    <div class="tabblock topnav">
-      <div class="topnav picktopblock"><a class="active" href="" style="color: crimson; font-size: 21px;">Home</a></div>
-      <div class="topnav topblock"><a href="/pages/index.html" href="">Mods</a></div>
-    </div>
-    <div>
-        <center><h1>Home</h1></center>
-        <center><p style="font-size: 30px; color: rgb(144, 154, 247);">Hi! I'm Minhbip, u can call me Minhbruh. I'm modder of Stick War 2 / Stick Empires</p></center>
-        <center><p style="font-size: 20px; color: rgb(175, 207, 235);">I create this to post my mods & my team mod (Elemental Empire) for u play. It still on testing so if u get some error, contact me in Discord</p></center>
-        <center><img src="/img/dbc96f3e64d8009c0e45ed74801bc491.jpg" alt="Minhbip's Avatar"></center>
-        <div style="transform: translateY(-290px); margin-left: 140px"><img style="transform: scaleY(-1);" src="/img/arrow.gif" alt="Arrow"></div>
-    </div>
-    <div>
-    <center><iframe src="https://discord.com/widget?id=988073796902735903&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe></center>
-    <center><img src="/img/frames.gif" alt="Team GIF"></center>
-    </div>
+    <header class="navbar">
+      <nav class="nav-links">
+        <a class="nav-item active" href="/">Home</a>
+        <a class="nav-item" href="/pages/index.html">Mods</a>
+      </nav>
+    </header>
+
+    <main class="container">
+      <section class="hero-section">
+        <img src="/img/dbc96f3e64d8009c0e45ed74801bc491.jpg" alt="Minhbip's Avatar" class="avatar">
+        <h1>Hi! I'm <span class="highlight">Minhbip</span> (Minhbruh)</h1>
+        <h2 class="subtitle">Modder of Stick War 2 / Stick Empires</h2>
+        <p class="description">
+          I create this to post my mods & my team mod (Elemental Empire) for you to play. <br>
+          It's still on testing so if you get some error, contact me on Discord.
+        </p>
+      </section>
+
+      <section class="github-section">
+        <h2 class="section-title">My GitHub Contributions</h2>
+        <div class="github-widget">
+          <!-- THAY CHỮ "YOUR_GITHUB_USERNAME" BẰNG TÊN GITHUB CỦA BẠN -->
+          <img src="https://ghchart.rshah.org/crimson/Minhbruh-Minhbip" alt="Minhbip's Github Chart" />
+        </div>
+      </section>
+
+      <section class="community-section">
+        <div class="discord-widget">
+          <iframe src="https://discord.com/widget?id=988073796902735903&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+        </div>
+    <footer class="footer-gif">
+      <img src="/img/frames.gif" alt="Team GIF">
+    </footer>
+      </section>
+    </main>
   </body>
 </html>

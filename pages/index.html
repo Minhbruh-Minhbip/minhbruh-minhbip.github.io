@@ -1,48 +1,49 @@
-<html>
-<!--   phần đầu -->
+<!DOCTYPE html>
+<html lang="vi">
   <head>
-    <title>Home</title>
+    <meta charset="UTF-8">
+    <title>Mods | Minhbip Modding</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/main.css">
     <link rel="shortcut icon" href="/img/dbc96f3e64d8009c0e45ed74801bc491.ico" type="image/x-icon" />
-    <style>
-      h1{
-          color:rgb(255, 243, 243);
-      }
-  </style>
   </head>
-<!--   phần thân  -->
   <body>
-    <div class="tabblock topnav">
-      <div class="topnav topblock"><a href="/index.html">Home</a></div>
-      <div class="topnav picktopblock"><a class="active" href="" style="color: crimson; font-size: 22px;">Mods</a></div>
-  </div>
-    <div>
-        <center><h1>Mods</h1></center>
-        <center><p style="font-size: 30px; font-weight: bold;">Some Stick War 2 / Stick Empires</p></center>
-    </div>
-    <center><p style="color: blue; font-size: 25px; font-family: Georgia, 'Times New Roman', Times, serif;">Here is list of my mods:</p></center>
-    <div class="card-container" style="transform: translateX(-20px);">
-        <ul>
-            <div class="block">
-              <div><img class="link_text" style="margin-top: 135px;" src="/img/element.png" width="475" alt="Stick War 2: Elemental Empire"></div>
-              <center><a class="link_text" style="margin-top: 70px;" href="/pages/elemental_empires.html">Stick War 2: Elemental Empire</a></center>
-              <center><p style="font-size: 23px; margin-top: -40px;">Stick War 2 but instead of playing Order Empire, you are Elemental Empire</p></center>
-            </div>
-            <div class="block">
-              <div><img class="link_text" src="/img/endless_dead.png" width="475" alt="Stick War 2: Endless Deads"></div>
-              <a class="link_text" style="margin-top: -20px;" href="/pages/endless_deads.html">Stick War 2: Endless Deads</a>
-              <center><p style="font-size: 23px; margin-top: -40px;">Endless Deads has been existed in Stick War 2</p></center>
-            </div>
-            <div class="block">
-              <div><img class="link_text" src="/img/skin_empires.png" width="475" alt="Stick War 2: Skin Empires"></div>
-              <a class="link_text" href="/pages/skin_empire.html">Stick War 2: Skin Empire</a>
-              <center><p style="font-size: 23px; margin-top: -40px;">In this game, instead meet normal enemy, you will meet them with another skin. Beat them and bring it to your team!</p></center>
-              <center><p style="font-size: 23px;">Note: Still in development</p></center>
-            </div>
-        </ul>
-    </div>
-    <div>
-    <center><img src="/img/frames.gif" alt="Team GIF"></center>
-    </div>
+    <header class="navbar">
+      <nav class="nav-links">
+        <a class="nav-item" href="/index.html">Home</a>
+        <a class="nav-item active" href="#">Mods</a>
+      </nav>
+    </header>
+
+    <main class="container">
+      <div class="mods-header">
+        <h1>Mods</h1>
+        <p>Here is the list of my Stick War 2 / Stick Empires mods</p>
+      </div>
+
+      <div class="mods-grid">
+        <div class="mod-card">
+          <img src="/img/element.png" alt="Stick War 2: Elemental Empire">
+          <a class="mod-title" href="/pages/elemental_empires.html">Elemental Empire</a>
+          <p class="mod-desc">Stick War 2 but instead of playing Order Empire, you are Elemental Empire.</p>
+        </div>
+        
+        <div class="mod-card">
+          <img src="/img/endless_dead.png" alt="Stick War 2: Endless Deads">
+          <a class="mod-title" href="/pages/endless_deads.html">Endless Deads</a>
+          <p class="mod-desc">Endless Deads mode has been brought to Stick War 2.</p>
+        </div>
+        
+        <div class="mod-card">
+          <img src="/img/skin_empires.png" alt="Stick War 2: Skin Empires">
+          <a class="mod-title" href="/pages/skin_empire.html">Skin Empire</a>
+          <p class="mod-desc">Meet enemies with completely new skins. Beat them and bring them to your team!<br><br><i>Note: Still in development</i></p>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer-gif">
+      <img src="/img/frames.gif" alt="Team GIF">
+    </footer>
   </body>
 </html>

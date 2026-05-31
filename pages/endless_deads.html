@@ -1,33 +1,48 @@
 <!DOCTYPE html>
-<html>
-<!--   phần đầu -->
+<html lang="vi">
   <head>
+    <meta charset="UTF-8">
     <title>Stick War II: Endless Deads</title>
-    <link rel="shortcut icon" href="/img/dbc96f3e64d8009c0e45ed74801bc491.ico" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/main.css">
-    <style>
-        h1{
-            color:rgb(42, 13, 124);
-            font-style: italic;
-        }
-    </style>
+    <link rel="shortcut icon" href="/img/dbc96f3e64d8009c0e45ed74801bc491.ico" type="image/x-icon" />
   </head>
-<!--   phần thân  -->
   <body>
-    <div class="tabblock topnav">
-      <div class="topnav topblock"><a href="/index.html">Home</a></div>
-      <div class="topnav picktopblock"><a class="active" href="/pages/index.html" style="color: crimson; font-size: 22px;">Mods</a></div>
-    </div>
-    <div>
-        <center><h1>Stick War II: Endless Deads</h1></center>
-        <center><video src="https://www.youtube.com/embed/pKGnzvQxAkQ?si=izOWbgRyrWgLb8ZP" controls></video></center>
-        <center><div class="downblock"><center><a href="https://drive.google.com/file/d/1neE289iNxMsU-BCp9ht8KItVyToRqOUa/view?usp=drive_link" target="_blank">Download here</a></center></div></center>
-    </div>
-    <div style="margin-top: 20px;">
-    <center><embed src="/stickwar/EndlessDead.swf" width="900" height="750" PLUGINSPAGE="http://www.macromedia.com/go/getflashplayer"  flashVars="isOnFacebook=false" allowNetworking="all"></ember></center>
-    </div>
-    <div>
-      <center><img src="/img/frames.gif" style="margin-top: 20px;" alt="Team GIF"></center>
+    <header class="navbar">
+      <nav class="nav-links">
+        <a class="nav-item" href="/index.html">Home</a>
+        <a class="nav-item active" href="/pages/index.html">Mods</a>
+      </nav>
+    </header>
+
+    <main class="container">
+      <div class="game-header">
+        <h1 class="color-elemental">Stick War II: Endless Deads</h1>
       </div>
+
+      <div class="media-section">
+        <iframe width="640" height="360" src="" frameborder="0" allowfullscreen></iframe>
+        
+        <a href="https://drive.google.com/file/d/1MQtJIJTUskqMPZykQla781LhYXO_06QH/view" target="_blank" class="btn-download">Download Here</a>
+      </div>
+
+      <div class="game-wrapper" oncontextmenu="return false;">
+        <embed src="/stickwar/EndlessDead.swf" 
+               width="850" height="700" 
+               quality="high" 
+               bgcolor="#000000" 
+               type="application/x-shockwave-flash" 
+               allowscriptaccess="always" 
+               allowNetworking="all" 
+               wmode="direct" 
+               flashVars="isOnFacebook=false" 
+               PLUGINSPAGE="http://www.macromedia.com/go/getflashplayer">
+        </embed>
+      </div>
+    </main>
+
+    <footer class="footer-gif">
+      <img src="/img/frames.gif" alt="Team GIF">
+    </footer>
   </body>
 </html>

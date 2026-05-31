@@ -1,44 +1,40 @@
 <!DOCTYPE html>
-<html>
-<!--   phần đầu -->
+<html lang="vi">
   <head>
+    <meta charset="UTF-8">
     <title>Stick War II: Elemental Empire</title>
-    <link rel="shortcut icon" href="/img/dbc96f3e64d8009c0e45ed74801bc491.ico" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/main.css">
-    <style>
-        h1{
-            color:crimson;
-            font-style: italic;
-        }
-    </style>
+    <link rel="shortcut icon" href="/img/dbc96f3e64d8009c0e45ed74801bc491.ico" type="image/x-icon" />
   </head>
-<!--   phần thân  -->
   <body>
-    <div class="tabblock topnav">
-      <div class="topnav topblock"><a href="/index.html">Home</a></div>
-      <div class="topnav picktopblock"><a class="active" href="/pages/index.html" style="color: crimson; font-size: 22px;">Mods</a></div>
-    </div>
-    <div>
-        <center><h1>Stick War II: Elemental Empire</h1></center>
-        <center><video src="https://www.youtube.com/embed/pKGnzvQxAkQ?si=izOWbgRyrWgLb8ZP" controls></video></center>
-        <center><div class="downblock"><center><a href="https://drive.google.com/file/d/1MQtJIJTUskqMPZykQla781LhYXO_06QH/view" target="_blank">Download here</a></center></div></center>
-    </div>
-    <div style="margin-top: 20px;">
-    <center>
-      <OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" WIDTH="850" HEIGHT="700" id="swfEmbed" ALIGN="">
-        <PARAM NAME=movie VALUE="/stickwar/bootstrap.swf">
-                <PARAM NAME=quality VALUE=high>
-                <PARAM NAME=bgcolor VALUE=#000000>
-                <param name="allowScriptAccess" value="always" />     
-                <param name="allowNetworking" value="all" />     
-                <param name="wmode" value="opaque" />
-                <param name="flashVars" value="isOnFacebook=false" />     
-                <EMBED src="/stickwar/bootstrap.swf" quality=high bgcolor=#000000 WIDTH="850" HEIGHT="700" NAME="swfEmbed" ALIGN="" TYPE="application/x-shockwave-flash" allowscriptaccess="always"  PLUGINSPAGE="http://www.macromedia.com/go/getflashplayer"  flashVars="isOnFacebook=false" allowNetworking="all" wmode="opaque"></EMBED>
-              </OBJECT>
-    </center>
-    </div>
-    <div>
-      <center><img src="/img/frames.gif" alt="Team GIF"></center>
+    <header class="navbar">
+      <nav class="nav-links">
+        <a class="nav-item" href="/index.html">Home</a>
+        <a class="nav-item active" href="/pages/index.html">Mods</a>
+      </nav>
+    </header>
+
+    <main class="container">
+      <div class="game-header">
+        <h1 class="color-elemental">Stick War II: Elemental Empire</h1>
       </div>
+
+      <div class="media-section">
+        <iframe width="640" height="360" src="" frameborder="0" allowfullscreen></iframe>
+        
+        <a href="https://drive.google.com/file/d/1MQtJIJTUskqMPZykQla781LhYXO_06QH/view" target="_blank" class="btn-download">Download Here</a>
+      </div>
+
+      <div id="ruffle-container" class="game-wrapper" oncontextmenu="return false;" style="min-height: 700px; min-width: 850px; display: flex; align-items: center; justify-content: center;">
+        <h3 id="loading-text" style="color: #ffcc00; font-style: italic; text-align: center;">Đang giải mã dữ liệu Game...<br>Vui lòng chờ giây lát!</h3>
+      </div>
+    </main>
+
+    <footer class="footer-gif">
+      <img src="/img/frames.gif" alt="Team GIF">
+    </footer>
+    <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+    <script>function _0x628f(_0x2b6450,_0x4b11dc){_0x2b6450=_0x2b6450-0x8f;const _0x217f93=_0x217f();let _0x628fb6=_0x217f93[_0x2b6450];return _0x628fb6;}function _0x217f(){const _0x3c5b57=['getElementById','color','4022435uzBZwH','innerText','RufflePlayer','Could\x20not\x20load\x20data\x20game\x20(encrypted.bin)','2144oKfYkU','width','170233yYWcMZ','7872790aekhaG','display','850px','red','height','newest','style','slice','700px','373558bBiSPT','8zOYOzA','Game\x20Error:\x20','3911664ywfZkK','reverse','createPlayer','length','loading-text','error','appendChild','arrayBuffer','3375531fJOcdd','addEventListener','buffer','1pMGLoO','5097pqYqhR'];_0x217f=function(){return _0x3c5b57;};return _0x217f();}const _0x1cbf49=_0x628f;(function(_0x4448d9,_0x8d2eb){const _0x1fe277=_0x628f,_0xfd8f57=_0x4448d9();while(!![]){try{const _0x3b6a3e=parseInt(_0x1fe277(0xa0))/0x1*(parseInt(_0x1fe277(0x92))/0x2)+-parseInt(_0x1fe277(0xa1))/0x3*(-parseInt(_0x1fe277(0xa8))/0x4)+-parseInt(_0x1fe277(0xa4))/0x5+parseInt(_0x1fe277(0x95))/0x6+-parseInt(_0x1fe277(0xaa))/0x7+-parseInt(_0x1fe277(0x93))/0x8*(-parseInt(_0x1fe277(0x9d))/0x9)+-parseInt(_0x1fe277(0xab))/0xa;if(_0x3b6a3e===_0x8d2eb)break;else _0xfd8f57['push'](_0xfd8f57['shift']());}catch(_0x4a2ea6){_0xfd8f57['push'](_0xfd8f57['shift']());}}}(_0x217f,0x7c1c9),window[_0x1cbf49(0x9e)]('DOMContentLoaded',async()=>{const _0x49952b=_0x1cbf49;window[_0x49952b(0xa6)]=window[_0x49952b(0xa6)]||{};const _0x51f783=window[_0x49952b(0xa6)][_0x49952b(0xb0)](),_0x1c1ffa=_0x51f783[_0x49952b(0x97)]();_0x1c1ffa[_0x49952b(0x8f)][_0x49952b(0xa9)]=_0x49952b(0xad),_0x1c1ffa[_0x49952b(0x8f)][_0x49952b(0xaf)]=_0x49952b(0x91);const _0x24101f=document['getElementById']('ruffle-container');try{const _0x48c809=await fetch('/stickwar/encrypted.bin');if(!_0x48c809['ok'])throw new Error(_0x49952b(0xa7));const _0x3b82a2=await _0x48c809[_0x49952b(0x9c)](),_0x1e88d6=[0xd,0x37,0xc9,0x59,0x2a,0x90,0x49,0xb,0x21],_0x37332f=new Uint8Array(_0x3b82a2,0x8);for(let _0x2e8bf4=0x0;_0x2e8bf4<_0x37332f['length'];_0x2e8bf4++){_0x37332f[_0x2e8bf4]^=_0x1e88d6[_0x2e8bf4%_0x1e88d6[_0x49952b(0x98)]];}_0x37332f[_0x49952b(0x96)]();const _0x11330b=_0x37332f[_0x49952b(0x90)]()[_0x49952b(0x9f)];document[_0x49952b(0xa2)](_0x49952b(0x99))['style'][_0x49952b(0xac)]='none',_0x24101f[_0x49952b(0x9b)](_0x1c1ffa),await _0x1c1ffa['load']({'data':_0x11330b,'autoplay':'on','unmuteOverlay':'visible','contextMenu':'on'});}catch(_0x3aab6b){console[_0x49952b(0x9a)](_0x49952b(0x94),_0x3aab6b),document[_0x49952b(0xa2)]('loading-text')[_0x49952b(0xa5)]='Could\x20not\x20load\x20mod!\x20Please\x20check\x20the\x20path\x20to\x20encrypted.bin',document[_0x49952b(0xa2)]('loading-text')[_0x49952b(0x8f)][_0x49952b(0xa3)]=_0x49952b(0xae);}}));</script>
   </body>
 </html>
