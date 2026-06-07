@@ -1,3 +1,7 @@
+
+ruffle-player, ruffle-embed, ruffle-object {
+            --splash-screen-background: #69bfed;
+        }
 /* --- BIẾN MÀU SẮC DÙNG CHUNG --- */
 :root {
   --bg-color: #161618;
