@@ -2,7 +2,6 @@
 ruffle-player, ruffle-embed, ruffle-object {
             --splash-screen-background: #69bfed;
         }
-/* --- BIẾN MÀU SẮC DÙNG CHUNG --- */
 :root {
   --bg-color: #161618;
   --bg-card: #222225;
@@ -12,7 +11,6 @@ ruffle-player, ruffle-embed, ruffle-object {
   --accent-color: #5c6bc0;
 }
 
-/* --- RESET & GLOBAL --- */
 * {
   margin: 0;
   padding: 0;
@@ -20,7 +18,7 @@ ruffle-player, ruffle-embed, ruffle-object {
 }
 
 body {
-  font-family: 'Poppins', sans-serif; /* Font hiện đại */
+  font-family: 'Poppins', sans-serif;
   background-color: var(--bg-color);
   color: var(--text-main);
   line-height: 1.6;
@@ -38,10 +36,9 @@ img {
   padding: 40px 20px;
   display: flex;
   flex-direction: column;
-  gap: 60px; /* Khoảng cách giữa các khu vực */
+  gap: 60px;
 }
 
-/* --- NAVBAR TỐI ƯU LẠI --- */
 .navbar {
   background-color: #0d0d0e;
   padding: 15px 0;
@@ -77,7 +74,6 @@ img {
   color: white;
 }
 
-/* --- HERO SECTION (GIỚI THIỆU) --- */
 .hero-section {
   text-align: center;
   background-color: var(--bg-card);
@@ -119,7 +115,6 @@ img {
   margin: 0 auto;
 }
 
-/* --- GITHUB SECTION --- */
 .github-section {
   text-align: center;
 }
@@ -141,16 +136,15 @@ img {
 }
 
 .github-widget img {
-  filter: hue-rotate(340deg); /* Chỉnh màu biểu đồ chart cho hợp với tone Crimson */
+  filter: hue-rotate(340deg);
 }
 
-/* --- COMMUNITY SECTION (DISCORD + GIF) --- */
 .community-section {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 50px;
-  flex-wrap: wrap; /* Tự xuống dòng trên mobile */
+  flex-wrap: wrap;
 }
 
 .discord-widget iframe {
@@ -161,11 +155,10 @@ img {
 .team-gif img {
   border-radius: 15px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
-  max-width: 350px; /* Giới hạn độ to của GIF */
+  max-width: 350px;
 }
 
 
-/* --- CÁC CLASS CŨ CỦA BẠN (DÀNH CHO TRANG MODS) --- */
 .card-container {
   display: flex;
   flex-wrap: wrap;
@@ -190,12 +183,10 @@ img {
   border-radius: 10px;
 }
 
-/* --- CHẶN VUỐT TRANG (SWIPE TO GO BACK) --- */
 html, body {
-  overscroll-behavior: none; /* Chặn kéo thả/vuốt để back/forward */
+  overscroll-behavior: none;
 }
 
-/* --- TRANG DANH SÁCH MODS (3 BLOCK 1 HÀNG) --- */
 .mods-header {
   text-align: center;
   margin-bottom: 40px;
@@ -210,7 +201,7 @@ html, body {
 }
 .mods-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Ép buộc 3 cột đều nhau */
+  grid-template-columns: repeat(3, 1fr); 
   gap: 30px;
   width: 100%;
 }
@@ -249,7 +240,6 @@ html, body {
   font-size: 1rem;
 }
 
-/* --- TRANG CHƠI GAME (CHI TIẾT MOD) --- */
 .game-header {
   text-align: center;
   margin-bottom: 20px;
@@ -259,7 +249,6 @@ html, body {
   font-style: italic;
   margin-bottom: 20px;
 }
-/* Màu riêng cho từng game */
 .color-elemental { color: crimson; }
 .color-endless { color: rgb(110, 133, 235); }
 .color-skin { color: rgb(20, 220, 70); }
@@ -292,7 +281,6 @@ html, body {
   transform: scale(1.05);
 }
 
-/* Khu vực chơi game */
 .game-wrapper {
   display: flex;
   justify-content: center;
@@ -306,11 +294,10 @@ html, body {
   margin-right: auto;
 }
 
-/* --- FOOTER GIF LUÔN Ở CUỐI VÀ CĂN GIỮA --- */
 .footer-gif {
   display: flex;
   justify-content: center;
-  margin-top: auto; /* Đẩy xuống cuối */
+  margin-top: auto;
   padding: 40px 0;
   width: 100%;
 }
